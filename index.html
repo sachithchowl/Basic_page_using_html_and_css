@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating temp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="image/logo.jpeg" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Game controllers</a></li>
+                    <li><a href="#">Contant us</a></li>
+                </ul>
+            </nav>
+            <img src="image/menu.png" alt="menu" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row" id="row">
+            <div class="col-1">
+                <h2>PS5</h2>
+                <h3>wireless controller for playstation 5</h3>
+                <p>(Compatible/Gemerice)</p>
+                <h4>$30.40</h4>
+                <button type="button">Buy Now <img src="image/right arrow.jpeg" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="image/game.png" alt="" class="controller">
+                <div class="color-box">
+                </div>
+                <div class="add-btn">
+                    <img src="image/home.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="image/facebook.png" alt="">
+            <img src="image/instagram.jpeg" alt="">
+            <img src="image/twitter.png" alt="">
+        </div>
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList")
+        var row = document.getElementById("row")
+        menuList.style.maxHeight = "0px"
+        row.style.marginTop = "0px"
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+            if(row.style.marginTop == "0px"){
+                row.style.marginTop = "145px"
+            }
+            else{
+                row.style.marginTop = "0px"
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
